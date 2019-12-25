@@ -19,7 +19,7 @@ jobs:
       - run: zip -R dist.zip ./* .* -X "dist.zip" -X ".git"
       - uses: actions/upload-artifact@v1
         with:
-          name: dist.zip
+          name: dist
           path: ./dist.zip
       
     
