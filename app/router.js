@@ -9,4 +9,5 @@ module.exports = app => {
   router.prefix('/api/v1');
 
   router.get('/index', controller.home.index);
+  router.get('/uptime', controller.home.uptime);
 };
