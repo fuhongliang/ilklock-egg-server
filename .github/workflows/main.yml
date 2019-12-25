@@ -16,10 +16,9 @@ jobs:
         with:
           node-version: '12.x'
       - run: npm install --production --ignore-scripts
-      - run: zip -R dist.zip ./* -X dist -X .git
+      - run: zip -R dist.zip ./* .* -X "dist.zip" -X ".git"
       - uses: actions/upload-artifact@v1
         with:
           name: dist.zip
-          path: .
       
     
